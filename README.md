@@ -12,10 +12,12 @@ Taken from [this answer](https://unix.stackexchange.com/a/286937/273498) by [Ste
 
 From within your host run:
 
-    echo deb http://ftp.debian.org/debian stretch-backports main contrib > /etc/apt/sources.list.d/stretch-backports.list
-    apt update
-    apt install virtualbox-guest-dkms virtualbox-guest-x11 linux-headers-$(uname -r)
-    
+```bash
+echo deb http://ftp.debian.org/debian stretch-backports main contrib > /etc/apt/sources.list.d/stretch-backports.list
+apt update
+apt install virtualbox-guest-dkms virtualbox-guest-x11 linux-headers-$(uname -r)
+```
+
 That's it. Just restart your VM. 
 
 *Tags: `debian` `linux` `virtualbox` `vboxmanage`*
@@ -38,7 +40,9 @@ Now type `Ctrl + _` and then `Ctrl + V`
 
 Taken from [this article](https://medium.freecodecamp.org/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef) by [Ryan Gordon](https://medium.freecodecamp.org/@ryangordon210):
 
-    curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+```bash
+curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+```
 
 *Tags: `raspberry` `raspberry-pi` `raspbian` `linux` `docker`*
 
@@ -48,8 +52,9 @@ Taken from [this article](https://medium.freecodecamp.org/the-easy-way-to-set-up
 
 Taken from [this answer](https://stackoverflow.com/a/35942890/8524301) by StackOverflow user [Neetika](https://stackoverflow.com/users/5574889/neetika):
 
-    git config credential.helper store
-
+```bash
+git config credential.helper store
+```
 
 At the next `pull`, you'll be asked the password and it will be stored afterwards.
 
@@ -61,15 +66,17 @@ At the next `pull`, you'll be asked the password and it will be stored afterward
 
 Taken from Jonathan Boccara's [fluencpp.com blog post](https://www.fluentcpp.com/2019/01/25/variadic-number-function-parameters-type/):
 
-    template <typename ... Ts>
-    using all_strings = typename std::enable_if<std::conjunction<std::is_convertible<Ts, std::string>...>::value>::type;
+```c++
+template <typename ... Ts>
+using all_strings = typename std::enable_if<std::conjunction<std::is_convertible<Ts, std::string>...>::value>::type;
 
-    template <typename ... Ts, typename = all_strings<Ts...>>
-    void function(Ts const& ... ts)
-    {
-        // ...
-    }
+template <typename ... Ts, typename = all_strings<Ts...>>
+void function(Ts const& ... ts)
+{
+    // ...
+}
 
+```
 *Tags: `c++` `c++17` `variadic-templates`*
 
 ----
@@ -78,8 +85,9 @@ Taken from Jonathan Boccara's [fluencpp.com blog post](https://www.fluentcpp.com
 
 Taken from [this answer](https://stackoverflow.com/a/356714/8524301) by StackOverflow user [Tader](https://stackoverflow.com/users/30700/tader):
 
-    curl --header "X-mysecrettoken: blablablabla" 127.0.0.1
-
+```bash
+curl --header "X-mysecrettoken: blablablabla" 127.0.0.1
+```
 *Tags: `curl` `http` `linux`*
 
 ----
