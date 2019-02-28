@@ -36,7 +36,7 @@ Now type `Ctrl + _` and then `Ctrl + V`
 
 ##### 3. Install and set-up docker on `Raspbian`
 
-Taken from [medium.freecodecamp.org](https://medium.freecodecamp.org/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef):
+Taken from [this article](https://medium.freecodecamp.org/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef) by [Ryan Gordon](https://medium.freecodecamp.org/@ryangordon210):
 
     curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 
