@@ -6,9 +6,11 @@ A collection of code snippets / commands I often use, all enclosed in this proje
 
 ----
 
-##### 1. Install `VirtualBox Guest Additions` in `Debian`
+##### 1. Install `VirtualBox Guest Additions` in a `Debian` host
 
-Taken from [this answer](https://unix.stackexchange.com/a/286937/273498) by [Stephen Kitt](https://unix.stackexchange.com/users/86440/stephen-kitt):
+Taken from [this answer](https://unix.stackexchange.com/a/286937/273498) by [Stephen Kitt](https://unix.stackexchange.com/users/86440/stephen-kitt).
+
+From within your host run:
 
     echo deb http://ftp.debian.org/debian stretch-backports main contrib > /etc/apt/sources.list.d/stretch-backports.list
     apt update
