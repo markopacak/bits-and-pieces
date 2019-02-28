@@ -72,6 +72,8 @@ Taken from Jonathan Boccara's [fluencpp.com blog post](https://www.fluentcpp.com
 
 *Tags: `c++` `c++17` `variadic-templates`*
 
+----
+
 ##### 6. Add headers to a CURL request
 
 Taken from [this answer](https://stackoverflow.com/a/356714/8524301) by StackOverflow user [Tader](https://stackoverflow.com/users/30700/tader):
@@ -79,3 +81,5 @@ Taken from [this answer](https://stackoverflow.com/a/356714/8524301) by StackOve
     curl --header "X-mysecrettoken: blablablabla" 127.0.0.1
 
 *Tags: `curl` `http` `linux`*
+
+----
