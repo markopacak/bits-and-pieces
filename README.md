@@ -55,3 +55,17 @@ At the next `pull`, you'll be asked the password and it will be stored afterward
 
 ----
 
+##### 5. Have variadic template arguments be all of the same type
+
+Taken from Jonathan Boccara's [fluencpp.com blog post](https://www.fluentcpp.com/2019/01/25/variadic-number-function-parameters-type/):
+
+    template <typename ... Ts>
+    using all_strings = typename std::enable_if<std::conjunction<std::is_convertible<Ts, std::string>...>::value>::type;
+
+    template <typename ... Ts, typename = all_strings<Ts...>>
+    void function(Ts const& ... ts)
+    {
+        // ...
+    }
+
+*Tags: `c++` `c++17` `variadic-templates`*
