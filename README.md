@@ -26,7 +26,7 @@ Now type `Ctrl + _` and then `Ctrl + V`
 
 ----
 
-##### 2. Install and set-up docker on `Raspbian`
+##### 3. Install and set-up docker on `Raspbian`
 
 Taken from [medium.freecodecamp.org](https://medium.freecodecamp.org/the-easy-way-to-set-up-docker-on-a-raspberry-pi-7d24ced073ef):
 
