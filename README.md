@@ -11,6 +11,8 @@ Taken from [this answer](https://unix.stackexchange.com/a/286937/273498) by [Ste
     apt update
     apt install virtualbox-guest-dkms virtualbox-guest-x11 linux-headers-$(uname -r)
     
+That's it. Just restart your VM. 
+
 ----
     
 ##### 2. Jump to the EOF when using `nano`
