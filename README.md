@@ -16,6 +16,8 @@ Taken from [this answer](https://unix.stackexchange.com/a/286937/273498) by [Ste
     
 That's it. Just restart your VM. 
 
+*Tags: `debian` `linux` `virtualbox` `vboxmanage`*
+
 ----
     
 ##### 2. Jump to the EOF when using `nano`
@@ -25,6 +27,9 @@ Taken from [my answer](https://unix.stackexchange.com/a/420892/273498) on [Unix 
 Open the file with `nano file.txt`.
 Now type `Ctrl + _` and then `Ctrl + V`
 
+
+*Tags: `nano` `linux`*
+
 ----
 
 ##### 3. Install and set-up docker on `Raspbian`
@@ -33,4 +38,20 @@ Taken from [medium.freecodecamp.org](https://medium.freecodecamp.org/the-easy-wa
 
     curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 
+*Tags: `raspberry` `raspberry-pi` `raspbian` `linux` `docker`*
+
 ----
+
+##### 4. Save the `git` password for your repo
+
+Taken from [this answer](https://stackoverflow.com/a/35942890/8524301) by StackOverflow user [Neetika](https://stackoverflow.com/users/5574889/neetika):
+
+    git config credential.helper store
+
+
+At the next `pull`, you'll be asked the password and it will be stored afterwards.
+
+*Tags: `git`*
+
+----
+
