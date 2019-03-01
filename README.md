@@ -106,3 +106,16 @@ All the parent folders of `static` will be created if they don't exist.
 
 ----
 
+##### 8. Stop last running Docker container without having to `docker ps -a` first
+
+Taken from [this answer](https://stackoverflow.com/a/34899613/8524301) by StackOverflow user [Koekiebox](https://stackoverflow.com/users/158288/koekiebox):
+
+```bash
+docker stop $(docker ps -q --filter ancestor=<image-name>)
+```
+
+
+*Tags: `docker` `linux`*
+
+----
+
