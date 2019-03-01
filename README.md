@@ -91,3 +91,18 @@ curl --header "X-mysecrettoken: blablablabla" 127.0.0.1
 *Tags: `curl` `http` `linux`*
 
 ----
+
+##### 7. mkdir: create nested folders
+
+Taken from [this answer](https://unix.stackexchange.com/a/84192/273498) by StackOverflow user [Braiam](https://unix.stackexchange.com/users/41104/braiam):
+
+```bash
+mkdir -p /var/www/mysite/static
+```
+
+All the parent folders of `static` will be created if they don't exist.
+
+*Tags: `mkdir` `file-system` `linux`*
+
+----
+
