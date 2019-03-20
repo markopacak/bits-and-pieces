@@ -121,7 +121,7 @@ docker stop $(docker ps -q --filter ancestor=<image-name>)
 
 ##### 9. Have variadic template arguments be all of the same type (using a dynamic type this time)
 
-Extending [bit number 9](https://github.com/markopacak/bits-and-pieces/blob/master/README.md#L65). 
+Extending [bit number 5](https://github.com/markopacak/bits-and-pieces/blob/master/README.md#L65). 
 
 ```c++
 template <class _Type, typename ... Ts>
