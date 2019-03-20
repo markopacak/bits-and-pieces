@@ -119,3 +119,25 @@ docker stop $(docker ps -q --filter ancestor=<image-name>)
 
 ----
 
+##### 9. Have variadic template arguments be all of the same type (using a dynamic type this time)
+
+Extending [bit number 9](https://github.com/markopacak/bits-and-pieces/blob/master/README.md#L65). 
+
+```c++
+template < class _Type, typename ... Ts >
+using all_of_type = typename std::enable_if < std::conjunction < std::is_convertible < Ts, _Type > ... > ::value > ::type;
+
+template < typename _Type, typename ... Ts, typename = all_of_type < _Type, Ts ... > >
+void function ( Ts const & ... ts )
+{
+	// ...
+}
+
+// ... e.g. in main.cpp
+function < std::string >("Hello", ",", "world", "!");	
+
+
+```
+*Tags: `c++` `c++17` `variadic-templates`*
+
+----
