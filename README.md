@@ -141,3 +141,18 @@ function <std::string>("Hello", ",", "world", "!");
 *Tags: `c++` `c++17` `variadic-templates`*
 
 ----
+
+
+##### 10. Check if a list in python contains duplicates
+
+Checks if any element of a list appears more than once.
+
+```python
+def list_contains_dupelicates(l):
+    return any(x and l.count(x) > 1 for x in l)
+```
+
+
+*Tags: `python` `python3`*
+
+----
