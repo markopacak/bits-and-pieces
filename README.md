@@ -156,3 +156,25 @@ def list_contains_dupelicates(l):
 *Tags: `python` `python3`*
 
 ----
+
+##### 11. Compile-time optimized version of `std::min`
+
+From this [c++ weekly video](https://www.youtube.com/watch?v=z_fnMdzfWAQ) by Jason Turner 
+
+```c++
+#include <algorithm>
+
+template <typename _Arg, typename ... _Args>
+constexpr decltype (auto) var_min (const _Arg& arg, const _Args& ... args)
+{
+    const _Arg* retval = &arg;
+
+    ( (retval = &std::min(*retval, args)), ... );
+    return *retval;
+}
+```
+
+
+*Tags: `c++` `c++17` `variadic-templates`*
+
+----
