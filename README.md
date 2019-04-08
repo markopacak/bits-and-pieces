@@ -157,7 +157,7 @@ def list_contains_dupelicates(l):
 
 ----
 
-##### 11. Compile-time optimized version of `std::min`
+##### 11. Compile-time optimized `find-min-value` with variadic arguments (internally using `std::min`)
 
 From this [c++ weekly video](https://www.youtube.com/watch?v=z_fnMdzfWAQ) by Jason Turner 
 
