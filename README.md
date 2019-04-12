@@ -178,3 +178,15 @@ constexpr decltype (auto) var_min (const _Arg& arg, const _Args& ... args)
 *Tags: `c++` `c++17` `variadic-templates`*
 
 ----
+
+##### 12. Kill all running `docker` containers on your machine
+
+From this [article](https://medium.com/the-code-review/top-10-docker-commands-you-cant-live-without-54fb6377f481) by Medium user [@ryanwhocodes](https://medium.com/@ryanwhocodes) 
+
+```bash
+docker kill $(docker ps -q)
+```
+
+*Tags: `docker` `bash` `linux`*
+
+----
